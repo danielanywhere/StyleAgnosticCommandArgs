@@ -14,8 +14,18 @@ Immediately after parsing, the **CommandArgCollection** contains a list of **Com
   key = argItem.Name.ToLower();
   switch(key)
   {
-   case "?":
-    bShowHelp = true;
+   case "":
+    // No name was specified.
+    key = argItem.Value.ToLower();
+    switch(key)
+    {
+     case "?":
+      bShowHelp = true;
+      break;
+     case "wait":
+      prg.mWaitAfterEnd = true;
+      break;
+    }
     break;
    case "action":
     if(Enum.TryParse<PActionTypeEnum>(argItem.Value,
@@ -33,9 +43,6 @@ Immediately after parsing, the **CommandArgCollection** contains a list of **Com
       break;
      }
     }
-    break;
-   case "wait":
-    prg.mWaitAfterEnd = true;
     break;
   }
  }
