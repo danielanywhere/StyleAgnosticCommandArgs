@@ -8,7 +8,7 @@ Immediately after parsing, the **CommandArgCollection** contains a list of **Com
 
 ```cs
 
- commandArgs = new CommandArgCollection(args);
+ CommandArgCollection commandArgs = new CommandArgCollection(args);
  foreach(CommandArgItem argItem in commandArgs)
  {
   key = argItem.Name.ToLower();
