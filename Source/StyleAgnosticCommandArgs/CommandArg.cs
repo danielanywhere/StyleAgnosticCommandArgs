@@ -110,6 +110,10 @@ namespace StyleAgnosticCommandArgs
 		/// <param name="args">
 		/// Reference to an array of command-line arguments to read.
 		/// </param>
+		/// <returns>
+		/// Reference to a collection of command arguments found in the supplied
+		/// array.
+		/// </returns>
 		public static CommandArgCollection Parse(string[] args)
 		{
 			CommandArgCollection result = new CommandArgCollection();
@@ -166,6 +170,9 @@ namespace StyleAgnosticCommandArgs
 		/// <summary>
 		/// Return the string representation of this item.
 		/// </summary>
+		/// <returns>
+		/// The string representation of the item.
+		/// </returns>
 		public override string ToString()
 		{
 			string result = "";

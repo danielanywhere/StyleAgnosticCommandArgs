@@ -1,18 +1,3 @@
-# Style-Agnostic Command-Line Arguments
-
-This tiny library allows you to support the user's own command line parameter preference by accepting either the **--** or **/** prefixes on each parameter.
-
-A parameter name is interpreted if the parameter begins with the pattern {Italic}\[A-Za-z0-9-\_\]{/Italic}**:** Zero or more white-spaces are ignored after the colon character. A parameter name is not required, and its Name property will be an empty string if not supplied.
-
-Immediately after parsing, the **CommandArgCollection** contains a list of **CommandArgItem** items, each having separate **Name** and **Value** properties.
-
-<p>&nbsp;</p>
-
-## Example Application
-
-The following example demonstrates this library in action.
-
-```cs
  CommandArgCollection commandArgs = new CommandArgCollection(args);
  foreach(CommandArgItem argItem in commandArgs)
  {
@@ -55,5 +40,3 @@ The following example demonstrates this library in action.
     break;
   }
  }
-
-```

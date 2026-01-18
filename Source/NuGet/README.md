@@ -6,7 +6,7 @@ A parameter name is interpreted if the parameter begins with the pattern {Italic
 
 Immediately after parsing, the **CommandArgCollection** contains a list of **CommandArgItem** items, each having separate **Name** and **Value** properties.
 
-<p>&nbsp;</p>
+---
 
 ## Example Application
 
@@ -57,3 +57,19 @@ The following example demonstrates this library in action.
  }
 
 ```
+
+
+## Updates
+
+| Version | Description |
+|---------|-------------|
+| 26.2118.4210 | Initial publication to GitHub. |
+
+
+## More Information
+
+For more information, please see the GitHub project:
+[danielanywhere/StyleAgnosticCommandArgs](https://github.com/danielanywhere/StyleAgnosticCommandArgs)
+
+Full API documentation is available at this library's [GitHub User Page](https://danielanywhere.github.io/StyleAgnosticCommandArgs).
+

@@ -3,7 +3,35 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>disable</Nullable>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <UserSecretsId>75bd0415-446d-41ac-9406-7c6f1d2872bf</UserSecretsId>
+    <Version>26.2118.4210</Version>
+    <PackageId>Dans.StyleAgnosticCommandArgs.Library</PackageId>
+    <Title>Dan's Style-Agnostic Command Args Library</Title>
+    <Description>Dan's Style-Agnostic Command-Line Arguments Library.</Description>
+    <Copyright>Copyright(c) 2026. Daniel Patterson, MCSD (danielanywhere)</Copyright>
+    <PackageProjectUrl>https://github.com/danielanywhere/StyleAgnosticCommandArgs</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>command;line;parameters;arguments;batch;processing</PackageTags>
+    <Authors>Daniel Patterson, MCSD (danielanywhere)</Authors>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\NuGet\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="ResourceMain.Designer.cs">
