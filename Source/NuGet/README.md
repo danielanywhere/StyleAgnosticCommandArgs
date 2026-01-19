@@ -2,7 +2,7 @@
 
 This tiny library allows you to support the user's own command line parameter preference by accepting either the **--** or **/** prefixes on each parameter.
 
-A parameter name is interpreted if the parameter begins with the pattern {Italic}\[A-Za-z0-9-\_\]{/Italic}**:** Zero or more white-spaces are ignored after the colon character. A parameter name is not required, and its Name property will be an empty string if not supplied.
+A parameter name is interpreted if the parameter begins with the pattern *\[A-Za-z0-9-\_\]***:** Zero or more white-spaces are ignored after the colon character. A parameter name is not required, and its Name property will be an empty string if not supplied.
 
 Immediately after parsing, the **CommandArgCollection** contains a list of **CommandArgItem** items, each having separate **Name** and **Value** properties.
 
@@ -63,7 +63,7 @@ The following example demonstrates this library in action.
 
 | Version | Description |
 |---------|-------------|
-| 26.2118.4210 | Initial publication to GitHub. |
+| 26.2118.4210 | Initial publication to NuGet. |
 
 
 ## More Information
